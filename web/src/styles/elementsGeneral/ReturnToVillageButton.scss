@@ -1,0 +1,23 @@
+@import '../core/variables.scss';
+
+
+.button {
+      
+     width: 50%;
+     margin-top: 1rem;
+     margin-left: 1rem;
+      font-family: #{$header-font};
+      
+      //color: #ffffff;
+      font-size: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      border: none;
+    
+      
+      &__img{
+        width: 80px;
+        
+      }
+      
+  }

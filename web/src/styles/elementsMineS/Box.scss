@@ -1,0 +1,41 @@
+@import '../core/variables.scss';
+.gameMine {
+  width: 80%;
+  
+&__container {
+    width: 30vw; /* Por ejemplo, el 80% del ancho de la ventana del navegador */
+  max-width: 450px; /* Establecemos un ancho máximo para que no se vuelva demasiado grande */
+  //height: auto; /* Esto permite que la altura se ajuste automáticamente según el contenido */
+  
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 2%; /* Utilizamos un porcentaje para el espacio entre los elementos */
+  //background-color: rgb(245, 188, 188);
+    &--box {
+        
+        background-color: $black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        ; /* Mantén el aspect ratio cuadrado */
+        &:hover {
+          background-color: $green;
+        }
+        
+        
+    }
+}}
+
+.bomb-image {
+    width: 100%;
+    padding-top: 90%;
+}
+
+

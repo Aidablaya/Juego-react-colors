@@ -1,0 +1,48 @@
+@import '../core/variables.scss';
+
+.boxLetter {
+    &__box{
+        position: relative;
+    width: 100vw; /* Ajusta el ancho según sea necesario */
+    max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+   // background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Asegura que el contenido esté detrás de la imagen */
+        &--img {
+            width: 100%;
+            position: relative; /* Ajusta la posición de los elementos hijos */
+            max-width: 90%;
+        }
+    }
+    &__title{
+        
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Asegura que el texto esté encima de la imagen */
+    color: $red; /* Cambia el color del texto según sea necesario */
+    }
+    &__text{
+        font-size: 0.8rem;
+        width: 100%;
+        font-family: $header-font;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2; 
+        color: $black; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &--par{
+            max-width: 20vw;
+        min-width: 20%;
+        }
+    }
+}
